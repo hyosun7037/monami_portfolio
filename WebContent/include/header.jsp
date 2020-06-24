@@ -1,12 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <header>
 	<nav class="local-nav">
 		<div class="local-nav-links">
-			<a href="/monami/users?cmd=login">로그인</a> <a href="/monami/users?cmd=join">회원가입</a>
-			<div class="count__con">
-				<a href="#"><i class="large material-icons"> shopping_basket</i></a> <span class="count">0</span>
-			</div>
-			<a href="#"><i class="large material-icons">search</i></a>
+		<c:choose>
+			<c:when test="${empty sessionScope.principal}">
+				<a href="/monami/users?cmd=login">로그인</a> 
+				<a href="/monami/users?cmd=join">회원가입</a>
+			</c:when>
+			
+			<c:otherwise>
+				<a href="/monami/users?cmd=update">마이페이지</a> 
+				<a href="/monami/users?cmd=logout">로그아웃</a>
+			</c:otherwise>
+		</c:choose>	
+				<div class="count__con">
+					<a href="#"><i class="large material-icons"> shopping_basket</i></a> 
+					<span class="count">0</span>
+				</div>
+				<a href="#"><i class="large material-icons">search</i></a>
 		</div>
 		<!--end of local-nav-links-->
 	</nav>

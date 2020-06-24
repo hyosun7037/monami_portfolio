@@ -9,7 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.monami.action.Action;
 import com.monami.action.users.UsersJoinAction;
+import com.monami.action.users.UsersJoinProcAction;
 import com.monami.action.users.UsersLoginAction;
+import com.monami.action.users.UsersLoginProcAction;
+import com.monami.action.users.UsersUsernameCheckAction;
 
 
 @WebServlet("/users")
@@ -44,9 +47,17 @@ public class UsersController extends HttpServlet {
 		if (cmd.equals("join")) {
 			// 회원가입 페이지로 이동
 			return new UsersJoinAction();
+		}else if(cmd.equals("joinProc")) {
+			// 회원가입을 진행 한 후 -> index.jsp로 이동
+			return new UsersJoinProcAction();
 		}else if(cmd.equals("login")) {
-			// 회원가입 페이지로 이동
+			// 로그인 페이지로 이동
 			return new UsersLoginAction();
+		}else if(cmd.equals("usernameCheck")) {
+			return new UsersUsernameCheckAction();
+		}else if(cmd.equals("loginProc")) {
+			// 회원 로그인을 수행한 후 -> 세션에 등록을 하고 -> index.jsp로 이동
+			return new UsersLoginProcAction();
 		}
 		return null;
 	}
