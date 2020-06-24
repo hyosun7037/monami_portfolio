@@ -9,7 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.monami.action.Action;
+import com.monami.action.board.AboutHomeAction;
 import com.monami.action.board.BoardHomeAction;
+import com.monami.action.board.ClassHomeAction;
+import com.monami.action.board.MapHomeAction;
+import com.monami.action.board.ProductHomeAction;
 
 // http://localhost:8000/blog/board
 @WebServlet("/board")
@@ -45,7 +49,19 @@ public class BoardController extends HttpServlet {
 	public Action router(String cmd) {
 		if (cmd.equals("home")) {
 			// 회원가입 페이지로 이동
-			return new BoardHomeAction(); // Board의 목록
+			return new BoardHomeAction();
+		}else if (cmd.equals("about")) {
+			// 회원가입 페이지로 이동
+			return new AboutHomeAction();
+		}else if (cmd.equals("product")) {
+			// 회원가입 페이지로 이동
+			return new ProductHomeAction();
+		}else if (cmd.equals("class")) {
+			// 회원가입 페이지로 이동
+			return new ClassHomeAction();
+		}else if (cmd.equals("map")) {
+			// 회원가입 페이지로 이동
+			return new MapHomeAction();
 		}
 		return null;
 	}

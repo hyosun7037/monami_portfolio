@@ -14,11 +14,15 @@
 	<div class="container">
 		<header>
 			<h1 class="logo">
-				<a href="home.jsp"><img src="images/logo_white.png" /></a>
+				<a href="/monami/board?cmd=home">
+					<img src="images/logo_white.png" />
+				</a>
 			</h1>
 
 			<div class="button_container" id="toggle">
-				<span class="top"></span> <span class="middle"></span> <span class="bottom"></span>
+				<span class="top"></span> 
+				<span class="middle"></span> 
+				<span class="bottom"></span>
 			</div>
 		</header>
 		<!--end of header-->
@@ -26,10 +30,10 @@
 		<div class="overlay" id="overlay">
 			<nav class="overlay-menu">
 				<ul>
-					<li class="about"><a href="about.jsp">ABOUT</a></li>
-					<li class="product"><a href="product.jsp">PRODUCT</a></li>
-					<li class="class"><a href="class.jsp">CLASS</a></li>
-					<li class="map"><a href="map.jsp">MAP</a></li>
+					<li class="about"><a href="/monami/board?cmd=about">ABOUT</a></li>
+					<li class="product"><a href="/monami/board?cmd=product">PRODUCT</a></li>
+					<li class="class"><a href="/monami/board?cmd=class">CLASS</a></li>
+					<li class="map"><a href="/monami/board?cmd=map">MAP</a></li>
 				</ul>
 			</nav>
 		</div>

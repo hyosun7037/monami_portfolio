@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.monami.action.Action;
 import com.monami.action.users.UsersJoinAction;
+import com.monami.action.users.UsersLoginAction;
 
 
 @WebServlet("/users")
@@ -43,6 +44,9 @@ public class UsersController extends HttpServlet {
 		if (cmd.equals("join")) {
 			// 회원가입 페이지로 이동
 			return new UsersJoinAction();
+		}else if(cmd.equals("login")) {
+			// 회원가입 페이지로 이동
+			return new UsersLoginAction();
 		}
 		return null;
 	}
