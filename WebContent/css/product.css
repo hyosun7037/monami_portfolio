@@ -1,0 +1,132 @@
+.main__container{
+    width:100%;
+}
+
+.product__menu{
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top:200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product__menu p{
+    width:100%;
+    text-align: center;
+    font-size:40px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.product__menu li{
+    font-size:17px;
+}
+
+.product__menu li a:hover{
+    font-weight: 900;
+    border-bottom: 3px solid #999;
+    padding-bottom: 5px;
+} 
+
+.product__con__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:100px;
+}
+
+.product__con__wrap div{
+    position: relative;
+    flex-basis: calc(25% - 10px);
+    margin: 5px;
+}
+
+.product__con__wrap div:before{
+    content: '';
+    display: block;
+
+    padding-top: 100%;
+}
+
+
+.product__con1{
+    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/115.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con2{
+    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/114.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con3{
+    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/25.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con4{
+    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/35.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con5{
+    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/314.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con6{
+    background: url('http://monamiconcept.com/wp-content/uploads/2018/09/180905_z000421-e1537504546901.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con7{
+    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/118.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con8{
+    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/319.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con9{
+    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/124.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con10{
+    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/225.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con11{
+    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/17.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con12{
+    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/29.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con13{
+    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/313.jpg') no-repeat;
+    background-size: contain;
+}
+
+.product__con14{
+    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/220.jpg') no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 768px) {
+    .product__con__wrap div{
+        flex-grow: 1;
+        flex-basis:100%;
+    }
+};
