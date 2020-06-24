@@ -117,7 +117,7 @@ hr {
 	<div id="main_container">
 		
 		<!-- header 영역 -->
-		<%@include file="include/header.jsp"%>
+		<%@include file="../include/header.jsp"%>
 
 		<div id="login">
 			<div id="login_form">

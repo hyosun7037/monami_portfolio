@@ -27,7 +27,7 @@ a {
 	color: #333;
 }
 
-#login {
+#join {
 	width: 600px;
 	height: 600px;
 	margin: 0 auto;
@@ -35,7 +35,7 @@ a {
 	/* background:#ddd; */
 }
 
-#login_form {
+#join_form {
 	/* text-align:center; */
 	border-radius: 10px;
 	padding: 30px 50px;
@@ -47,7 +47,7 @@ a {
 	transform: translate(-50%, -50%);
 }
 
-.login {
+.join {
 	font-size: 20px;
 	font-weight: 600;
 	color: #333;
@@ -76,6 +76,7 @@ a {
 
 .btn:hover {
 	background: #ca296a;
+	transition:.3s all;
 }
 
 hr {
@@ -119,8 +120,39 @@ hr {
 	width: 235px;
 }
 
-.login_form_con p {
+.join_form_con p {
 	padding-top: 10px;
+}
+
+.jusoBtn{
+	background:#666;
+	padding:9px 25px;
+	border-radius: 5px;
+	color:white;
+	font-size:12px;
+}
+
+.jusoBtn:hover{
+	background:#333;
+	transition:.3s all;
+}
+.join_p{
+	text-align: left; 
+	font-size: 12px; 
+	color: #666;
+}
+
+.idCheck{
+	background:#217Af0;
+	padding:9px 25px;
+	border-radius: 5px;
+	color:white;
+	font-size:12px;
+}
+
+.idCheck:hover{
+	background:black;
+	transition:.3s all;
 }
 </style>
 </head>
@@ -128,39 +160,34 @@ hr {
 	<div id="main_container">
 		
 		<!-- header 영역 -->
-		<%@include file="include/header.jsp"%>
+		<%@include file="../include/header.jsp"%>
 
-		<div id="login">
-			<div id="login_form">
+		<div id="join">
+			<div id="join_form">
 				<!--회원가입 폼-->
-				<form class="login_form_con">
-					<h3 class="login" style="letter-spacing: -1px;">회원가입</h3>
-
-					<!-- <p>
-           				 <input type="submit" value="Sign in with Google" class="btn" style="background-color:#217Af0">
-       				 </p> 구글로 로그인-->
-
+				<form class="join_form_con">
+					<h3 class="join" style="letter-spacing: -1px;">회원가입</h3>
 					<hr>
-
+					
 					<!-- <span>ID</span> -->
-					<p style="text-align: left; font-size: 12px; color: #666">username</p>
-					<input type="text" placeholder="아이디" class="size">
+					<p class="join_p">username</p>
+					<input type="text" placeholder="아이디" class="size" style="width:195px">
+					<button class="idCheck">중복확인</button>
 					<p></p>
-					</label>
 					<!--아이디-->
 
 					<label> <!-- <span>PW</span> -->
-						<p style="text-align: left; font-size: 12px; color: #666">Password</p> <input type="password" placeholder="비밀번호" class="size">
+						<p class="join_p">Password</p> <input type="password" placeholder="비밀번호" class="size">
 					</label>
 					<!--비밀번호-->
 
 					<label> <!-- <span>PW</span> -->
-						<p style="text-align: left; font-size: 12px; color: #666"></p> <input type="password" placeholder="비밀번호 확인" class="size">
+						<p class="join_p"></p> <input type="password" placeholder="비밀번호 확인" class="size">
 					</label>
 					<!--비밀번호 확인-->
 
-					<label> <!-- <span>PW</span> -->
-						<p style="text-align: left; font-size: 12px; color: #666">Mobile Phone</p> <select class="size num1">
+					<label> <!-- <span>Phone</span> -->
+						<p class="join_p">Mobile Phone</p> <select class="size num1">
 							<option value="1" selected>SKT</option>
 							<option value="2" selected>KT</option>
 							<option value="3" selected>LG</option>
@@ -169,16 +196,22 @@ hr {
 					<!--전화번호-->
 
 
-					<label> <!-- <span>PW</span> -->
-						<p style="text-align: left; font-size: 12px; color: #666">E-mail</p> <input type="text" placeholder="이메일" class="size">
+					<label> <!-- <span>E-mail</span> -->
+						<p class="join_p">E-mail</p> <input type="text" placeholder="이메일" class="size">
 					</label>
 					<!--이메일-->
+					
+					<label> <!-- <span>Address</span> -->
+						<p class="join_p">Address</p>
+						<input type="text" placeholder="주소" class="size" style="width:220px; margin-bottom: 10px">
+						<button class="jusoBtn">검색</button>
+					</label>
+					<!--주소-->
 
 
 					<br>
 					<p>
 						<input type="submit" value="Create Acoout" class="btn">
-
 					</p>
 				</form>
 
