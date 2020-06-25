@@ -28,8 +28,9 @@
 }
 
 .product__menu li{
-    font-size:17px;
+    font-size:15px;
     font-weight:100;
+    line-height:2;
 }
 
 .product__menu li a:hover{
@@ -64,73 +65,156 @@
 
 
 .product__con1{
-    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/115.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000003497/main/MG000003497_REP_THUMB_285X285_20191206103812.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con2{
-    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/114.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000004219/main/MG000004219_REP_THUMB_285X285_20191209094258.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con3{
-    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/25.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000003942/main/MG000003942_REP_THUMB_285X285_20191206103859.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con4{
-    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/35.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000015/main/MG000000015_REP_THUMB_285X285_20191206104004.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con5{
-    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/314.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000156/main/MG000000156_REP_THUMB_285X285_20200319090845.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con6{
-    background: url('http://monamiconcept.com/wp-content/uploads/2018/09/180905_z000421-e1537504546901.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000003/main/MG000000003_REP_THUMB_285X285_20191206104044.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con7{
-    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/118.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000005734/main/MG000005734_REP_THUMB_285X285_20200131171046.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con8{
-    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/319.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000006/main/MG000000006_REP_THUMB_285X285_20191206104402.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con9{
-    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/124.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000144/main/MG000000144_REP_THUMB_285X285_20191210134250.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con10{
-    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/225.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000003509/main/MG000003509_REP_THUMB_285X285_20191209163816.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con11{
-    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/17.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000047/main/MG000000047_REP_THUMB_285X285_20191210112324.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con12{
-    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/29.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000185/main/MG000000185_REP_THUMB_285X285_20190704083912.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con13{
-    background: url('http://monamiconcept.com/wp-content/uploads/2017/12/313.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000004/main/MG000000004_REP_THUMB_285X285_20191206104312.blob') no-repeat;
     background-size: contain;
 }
 
 .product__con14{
-    background: url('http://monamiconcept.com/wp-content/uploads/2016/09/220.jpg') no-repeat;
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000003499/main/MG000003499_REP_THUMB_285X285_20191206104237.blob') no-repeat;
     background-size: contain;
+}
+
+.product__con15{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000026/main/MG000000026_REP_THUMB_285X285_20191209164646.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con16{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000004028/main/MG000004028_REP_THUMB_285X285_20191206104923.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con17{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000008/main/MG000000008_REP_THUMB_285X285_20191209085012.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con18{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000004221/main/MG000004221_REP_THUMB_285X285_20191209165244.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con19{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000004768/main/MG000004768_REP_THUMB_285X285_20190802102035.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con20{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000162/main/MG000000162_REP_THUMB_285X285_20191209165329.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con21{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000000181/main/MG000000181_REP_THUMB_285X285_20191209164910.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con22{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000003514/main/MG000003514_REP_THUMB_285X285_20191206104550.blob') no-repeat;
+    background-size: contain;
+}
+
+.product__con23{
+    background: url('https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/product/goods/MG000005475/main/MG000005475_REP_THUMB_285X285_20191127120016.blob') no-repeat;
+    background-size: contain;
+}
+
+
+.product__con1 span{
+	width:100%;
+}
+.info{
+	display:block;
+	min-height:89px;
+	margin-top:12px;
+	font-size:14px;
+	line-height:24px;
+}
+
+.info .txt_brand{
+	display:block;
+	margin-bottom:9px;
+	color:#999;
+	font-weight:500;
+	font-size:13px;
+}
+
+.txt-price{
+	display: block;
+	color:#ff3c00;
+	font-weight:900;
+}
+
+.tag{
+	display:block;
+	margin-top:14px;
+	min-height:17px;
+	font-size: 0;
+	letter-spacing:0;
+}
+
+.txt-ti{
+	display: block;
 }
 
 @media (max-width: 768px) {

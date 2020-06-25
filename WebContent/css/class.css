@@ -18,6 +18,41 @@
     font-size:40px;
     font-weight: 400;
     margin-bottom: 50px;
+    border-bottom: 3px solid #111;
+}
+
+.info{
+	display:block;
+	min-height:89px;
+	margin-top:12px;
+	font-size:14px;
+	line-height:24px;
+}
+
+.info .txt_brand{
+	display:block;
+	margin-bottom:9px;
+	color:#999;
+	font-weight:500;
+	font-size:13px;
+}
+
+.txt-price{
+	display: block;
+	color:#ff3c00;
+	font-weight:900;
+}
+
+.tag{
+	display:block;
+	margin-top:14px;
+	min-height:17px;
+	font-size: 0;
+	letter-spacing:0;
+}
+
+.txt-ti{
+	display: block;
 }
 
 .class__menu li{
@@ -26,8 +61,7 @@
 
 .class__menu li a:hover{
     font-weight: 900;
-    border-bottom: 3px solid #999;
-    padding-bottom: 5px;
+    color:#DF0101;
 } 
 
 .class__con__wrap div:before{

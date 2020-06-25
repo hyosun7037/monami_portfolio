@@ -23,8 +23,8 @@
 		<section class="class__menu__wrap">
 			<ul class="class__menu">
 				<p>ONEDAY CLASS</p>
-				<li><a href="#">이벤트</a></li>
-				<li><a href="#">원데이 클래스</a></li>
+				<li style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">이벤트</a></li>
+				<li style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">원데이 클래스</a></li>
 			</ul>
 		</section>
 
