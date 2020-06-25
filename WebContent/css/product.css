@@ -8,8 +8,14 @@
     margin-top:200px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+/*     align-items: center; */
     flex-wrap: wrap;
+}
+
+.bold{
+	font-weight:900;
+	font-size:20px;
+	padding:10px 0;
 }
 
 .product__menu p{
@@ -18,16 +24,19 @@
     font-size:40px;
     font-weight: 400;
     margin-bottom: 50px;
+    border-bottom:3px solid #111;
 }
 
 .product__menu li{
     font-size:17px;
+    font-weight:100;
 }
 
 .product__menu li a:hover{
     font-weight: 900;
-    border-bottom: 3px solid #999;
-    padding-bottom: 5px;
+    color:#DF0101;
+/*     border-bottom: 3px solid #111; */
+/*     padding-bottom: 5px; */
 } 
 
 .product__con__wrap{

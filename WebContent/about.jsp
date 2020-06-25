@@ -17,7 +17,7 @@
 	<div class="main__container">
 		<!-- header 영역 -->
 		<%@include file="include/header.jsp"%>
-		
+
 		<section class="about__main bxslider">
 			<div>
 				<img src="images/about_main.jpg">
@@ -42,6 +42,7 @@
 			</div>
 		</section>
 
+
 		<section class="about__con2">
 			<div class="about__con2__tit">
 				<nav>모나미 소개</nav>
@@ -54,6 +55,7 @@
 			</div>
 		</section>
 
+		
 		<section class="about__con3">
 			<p>'오래된 친구지만 항상 신선하고 놀라움으로 가득찬, 그리고 미래를 위해 쉼 없이 노력하는' 기업이 되고자 합니다. 모나미의 새로운 변화와 도전을 지켜봐 주시길 바라며, 앞으로도 변함없는 사랑과 격려를 부탁드립니다.</p>
 			<p>
@@ -63,7 +65,7 @@
 
 		<!-- footer 영역 -->
 		<%@include file="include/footer.jsp"%>
-		
+
 	</div>
 	<script src="js/index.js"></script>
 

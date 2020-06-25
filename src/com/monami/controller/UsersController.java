@@ -13,6 +13,8 @@ import com.monami.action.users.UsersJoinProcAction;
 import com.monami.action.users.UsersLoginAction;
 import com.monami.action.users.UsersLoginProcAction;
 import com.monami.action.users.UsersLogoutAction;
+import com.monami.action.users.UsersUpdateAction;
+import com.monami.action.users.UsersUpdateProcAction;
 import com.monami.action.users.UsersUsernameCheckAction;
 
 @WebServlet("/users")
@@ -62,6 +64,12 @@ public class UsersController extends HttpServlet {
 		} else if (cmd.equals("logout")) {
 			// 로그아웃
 			return new UsersLogoutAction();
+		} else if (cmd.equals("update")) {
+			// 회원 수정 페이지로 이동 (세션에 User 오브젝트를 가지고 있을 예정)
+			return new UsersUpdateAction();
+		}else if(cmd.equals("updateProc")) {
+			// 회원 수정을 진행 한 후 -> index.jsp로 이동
+			return new UsersUpdateProcAction();
 		}
 		return null;
 	}

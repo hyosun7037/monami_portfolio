@@ -22,14 +22,14 @@
 		<div id="join">
 			<div id="join_form">
 				<!--회원가입 폼-->
-				<form class="join_form_con" action="/monami/users?cmd=joinProc" method="post" onSubmit ="return validate()">
+				<form class="join_form_con" action="/monami/users?cmd=updateProc" method="post">
 					<h3 class="join" style="letter-spacing: -1px;">회원기본정보</h3>
 					<hr>
+					<input type="hidden" name="id" value="${sessionScope.principal.id}"/>
 					
 					<!--아이디-->
 					<p class="join_p">username</p>
-					<input type="text" id="username" name="username" placeholder="아이디" class="size" style="width:195px" required>
-					<button class="idCheck" onClick="usernameCheck()">중복확인</button>
+					<input value="${sessionScope.principal.username}" type="text" id="username" name="username" placeholder="아이디" class="size form-control" readonly>
 					<p></p>
 					
 
@@ -44,17 +44,17 @@
 							<option value="2" selected>KT</option>
 							<option value="3" selected>LG</option>
 						</select> 
-					<input type="number" id="phonenumber" name="phonenumber" placeholder="-빼고 숫자만 입력" class="size num2" required>
+					<input value="${sessionScope.principal.phonenumber}" type="number" id="phonenumber" name="phonenumber" placeholder="-빼고 숫자만 입력" class="size num2" required>
 					
 					
 					<!--이메일-->
 					<p class="join_p">E-mail</p> 
-					<input type="email" id="email" name="email" placeholder="이메일" class="size" required>
+					<input value="${sessionScope.principal.email}" type="email" id="email" name="email" placeholder="이메일" class="size" required>
 					
 					
 					<!--주소-->
 					<p class="join_p">Address</p>
-					<input type="text" id="address" name="address" placeholder="주소" class="size" style="width:220px; margin-bottom: 10px">
+					<input value="${sessionScope.principal.address}" type="text" id="address" name="address" placeholder="주소" class="size" style="width:220px; margin-bottom: 10px">
 					<button type="button" class="jusoBtn" onClick="goPopup();">검색</button>
 					
 					<br>
