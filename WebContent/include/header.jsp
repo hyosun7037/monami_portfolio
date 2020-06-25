@@ -10,7 +10,8 @@
 			</c:when>
 			
 			<c:otherwise>
-				<a href="/monami/users?cmd=update">마이페이지</a> 
+				<a href="/monami/users?cmd=update">회원정보수정</a> 
+				<a href="/monami/users?cmd=update">주문목록</a> 
 				<a href="/monami/users?cmd=logout">로그아웃</a>
 			</c:otherwise>
 		</c:choose>	
