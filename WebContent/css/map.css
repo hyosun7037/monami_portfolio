@@ -4,7 +4,7 @@
 .map__con1__tit{
     font-family: 'Roboto';
     font-size:35px;
-    font-weight: 1100px;
+    font-weight: 900px;
     letter-spacing: -3px;
     border-bottom:3px solid #111;
     max-width:1080px;
@@ -19,8 +19,8 @@
     /* align-items: center; */
     justify-content: center;
     max-width: 1080px;
-    height: 1100px;
-    margin:150px auto 0;
+    height: 1000px;
+    margin:100px auto 0;
     position: relative;
   }
   

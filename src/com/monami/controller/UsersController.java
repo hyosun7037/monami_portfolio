@@ -13,6 +13,7 @@ import com.monami.action.users.UsersJoinProcAction;
 import com.monami.action.users.UsersLoginAction;
 import com.monami.action.users.UsersLoginProcAction;
 import com.monami.action.users.UsersLogoutAction;
+import com.monami.action.users.UsersOrderAction;
 import com.monami.action.users.UsersUpdateAction;
 import com.monami.action.users.UsersUpdateProcAction;
 import com.monami.action.users.UsersUsernameCheckAction;
@@ -70,7 +71,11 @@ public class UsersController extends HttpServlet {
 		}else if(cmd.equals("updateProc")) {
 			// 회원 수정을 진행 한 후 -> index.jsp로 이동
 			return new UsersUpdateProcAction();
+		}else if(cmd.equals("order")) {
+			// 회원 수정을 진행 한 후 -> index.jsp로 이동
+			return new UsersOrderAction();
 		}
+		
 		return null;
 	}
 }
