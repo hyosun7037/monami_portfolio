@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.monami.action.Action;
+import com.monami.action.users.UsersCartAction;
 import com.monami.action.users.UsersJoinAction;
 import com.monami.action.users.UsersJoinProcAction;
 import com.monami.action.users.UsersLoginAction;
@@ -74,6 +75,9 @@ public class UsersController extends HttpServlet {
 		}else if(cmd.equals("order")) {
 			// 회원 수정을 진행 한 후 -> index.jsp로 이동
 			return new UsersOrderAction();
+		}else if(cmd.equals("cart")) {
+			// 회원 수정을 진행 한 후 -> index.jsp로 이동
+			return new UsersCartAction();
 		}
 		
 		return null;

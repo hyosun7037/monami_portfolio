@@ -16,7 +16,7 @@
 			</c:otherwise>
 		</c:choose>	
 				<div class="count__con">
-					<a href="#"><i class="large material-icons">shopping_basket</i></a> 
+					<a href="/monami/users?cmd=cart"><i class="large material-icons">shopping_basket</i></a> 
 					<span class="count">0</span>
 				</div>
 				<a href="#"><i class="large material-icons">search</i></a>
