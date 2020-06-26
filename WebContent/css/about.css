@@ -169,6 +169,7 @@
   position: relative;
   position: fixed;
   box-sizing: content-box;
+  z-index: 10000;
 }
 
 .about__main{

@@ -12,6 +12,8 @@
     flex-wrap: wrap;
 }
 
+
+}
 .bold{
 	font-weight:900;
 	font-size:20px;
@@ -106,4 +108,22 @@
         flex-grow: 1;
         flex-basis:100%;
     }
+    .product__menu{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.product__menu ul{
+		width:100%;
+		text-align: center;
+	}
+	
+	.product__menu ul li:not(.product__tit){
+		display: none;
+	}
+	
+	product__tit{
+		transition:0.4s;
+	}
 };

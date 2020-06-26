@@ -23,10 +23,10 @@
 		<%@include file="include/header.jsp"%>
 
 		<section class="product__menu__wrap">
-			<ul class="product__menu">
+			<div class="product__menu">
 				<p>PRODUCT</p>
 				<ul>
-					<li class="prPen" onclick="itemsList('${items.value}')" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">프리미엄 펜</a></li>
+					<li class="product__tit prPen" onclick="itemsList('${items.value}')" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">프리미엄 펜</a></li>
 					<li><a href="#">153프리미엄</a></li>
 					<li><a href="#">데스크펜/스마트펜</a></li>
 					<li><a href="#">파카</a></li>
@@ -36,7 +36,7 @@
 				</ul>
 				
 				<ul>
-					<li onclick="pen()" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">펜/펜슬</a></li>
+					<li class="product__tit" onclick="pen()" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">펜/펜슬</a></li>
 					<li><a href="#">볼펜</a></li>
 					<li><a href="#">수성펜/사인펜</a></li>
 					<li><a href="#">연필/샤프</a></li>
@@ -44,21 +44,21 @@
 				</ul>
 				
 				<ul>
-					<li style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">마카</a></li>
+					<li class="product__tit" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">마카</a></li>
 					<li><a href="#">네임펜/유성매직</a></li>
 					<li><a href="#">생활/보드마카</a></li>
 					<li><a href="#">패브릭/세라믹마카</a></li>
 				</ul>
 				
 				<ul>
-					<li style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">컬러링/브러쉬</a></li>
+					<li class="product__tit" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">컬러링/브러쉬</a></li>
 					<li><a href="#">컬러링펜</a></li>
 					<li><a href="#">브러쉬펜</a></li>
 					<li><a href="#">미술용품</a></li>
 				</ul>
 				
 				<ul>
-					<li style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">디자인 문구</a></li>
+					<li class="product__tit" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">디자인 문구</a></li>
 					<li><a href="#">몰스킨</a></li>
 					<li><a href="#">다이어리/노트</a></li>
 					<li><a href="#">카드/봉투</a></li>
@@ -66,7 +66,7 @@
 					<li><a href="#">풀/스티커/테이프</a></li>
 					<li><a href="#">스탬프</a></li>
 				</ul>
-			</ul>
+			</div>
 		</section>
 
 		<section class="product__con__wrap">
@@ -114,6 +114,23 @@
 			}).fail(function(error){
 				alert(error);
 			});
+		}
+
+
+		// 아코디언 메뉴 
+		var acc = document.getElementsByClassName("product__tit");
+		var i;
+
+		for (i = 0; i < 5; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var lis = this.nextElementSibling;
+		    if (lis.style.display === "block") {
+		    	lis.style.display = "none";
+		    } else {
+		    	lis.style.display = "block";
+		    }
+		  });
 		}
 		
 		</script>
