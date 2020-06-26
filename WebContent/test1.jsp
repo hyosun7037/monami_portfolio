@@ -7,7 +7,8 @@
 </head>
 <body>
 	<form action="/monami/test?cmd=test" method="post">
-		<input name="url" type="text"> <select name="value" id="value">
+		<input name="url" type="text"> 
+		<select name="value" id="value">
 			<option value="prPen">프리미엄펜</option>
 			<option value="pen">펜/펜슬</option>
 			<option value="mark">마카</option>

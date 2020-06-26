@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +26,7 @@
 			<ul class="product__menu">
 				<p>PRODUCT</p>
 				<ul>
-					<li style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">프리미엄 펜</a></li>
+					<li class="prPen" onclick="itemsList('${items.value}')" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">프리미엄 펜</a></li>
 					<li><a href="#">153프리미엄</a></li>
 					<li><a href="#">데스크펜/스마트펜</a></li>
 					<li><a href="#">파카</a></li>
@@ -34,7 +36,7 @@
 				</ul>
 				
 				<ul>
-					<li style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">펜/펜슬</a></li>
+					<li onclick="pen()" style="font-weight:900; font-size:20px; padding:10px 0;"><a href="#">펜/펜슬</a></li>
 					<li><a href="#">볼펜</a></li>
 					<li><a href="#">수성펜/사인펜</a></li>
 					<li><a href="#">연필/샤프</a></li>
@@ -68,215 +70,53 @@
 		</section>
 
 		<section class="product__con__wrap">
-			<div class="product__con1">
+		 <!-- items:모델 / itemss:list배열 -->
+			<c:forEach var="items" items="${itemss}">
+			<div id="product__con" style="background:url('${items.imgUrl}') no-repeat; background-size:contain; cursor:pointer">
 				<span class="info">
 					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정]153블라썸</span>
+					<span class="txt-ti">${items.name}</span>
 				</span>
-				<span class="txt-price">20,000원</span>
+				<span class="txt-price">${items.price}</span>
 				<span class="tag"></span>
 			</div>
-			
-			<div class="product__con2">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">FX153</span>
-				</span>
-				<span class="txt-price">1,500원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con3">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 네이처</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con4">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블랙&화이트</span>
-				</span>
-				<span class="txt-price">18,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con5">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">에프엑스 제타(FX-ZETA)</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con6">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 아이디 볼펜</span>
-				</span>
-				<span class="txt-price">15,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con7">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">60주년 프러스펜 3000 데스크펜</span>
-					<span class="txt-ti">모나미 창립 60주년 기념 제품</span>
-				</span>
-				<span class="txt-price">200,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con8">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 골드</span>
-				</span>
-				<span class="txt-price">50,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con9">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con10">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con11">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con12">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con13">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con14">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con15">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con16">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con17">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			
-			<div class="product__con18">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con19">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con20">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con21">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con22">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
-			
-			<div class="product__con23">
-				<span class="info">
-					<span class="txt_brand">Monami / 모나미</span>
-					<span class="txt-ti">[리필심증정] 153 블라썸</span>
-				</span>
-				<span class="txt-price">20,000원</span>
-				<span class="tag"></span>
-			</div>
+			</c:forEach>
 		</section>
+		
+		
+		<script>
+
+		function prPen(){}
+		
+		function pen(){
+			$.ajax({
+				type:"get",
+				url:"/monami/board?cmd=product",
+				dataType:"json"
+			}).done(function(result){
+				$("#product__con").empty();
+
+				// result의 product 가져오기 (forEach)
+				for(var items of result) {
+
+					var string = // 다른 곳 java파일에 ""안에 붙여넣으면 자동으로 string화 		
+						"			<div class=\"product__con\" style=\"background:url('"+items.imgUrl+"') no-repeat; background-size:contain; cursor:pointer\">\r\n" + 
+						"				<span class=\"info\">\r\n" + 
+						"					<span class=\"txt_brand\">Monami / 모나미</span>\r\n" + 
+						"					<span class=\"txt-ti\">"+items.name+"</span>\r\n" + 
+						"				</span>\r\n" + 
+						"				<span class=\"txt-price\">"+items.price+"</span>\r\n" + 
+						"				<span class=\"tag\"></span>\r\n" + 
+						"			</div>"
+						$("#product__con").append(string);					
+					
+				}
+			}).fail(function(error){
+				alert(error);
+			});
+		}
+		
+		</script>
 		
 		<!-- footer 영역 -->
 		<%@include file="include/footer.jsp"%>
