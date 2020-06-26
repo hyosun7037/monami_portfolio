@@ -17,6 +17,7 @@ public class JsoupTestAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String url = request.getParameter("url");
+		String value = request.getParameter("value");
 		
 		List<Items> items = JsoupTest.JsoupItems(url);
 		

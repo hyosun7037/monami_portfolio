@@ -26,7 +26,7 @@
 					<h3 class="login" style="letter-spacing: -1px;">로그인</h3>
 
 					<p>
-						<input type="submit" value="Sign in with Google" class="btn" style="background-color: #217Af0">
+						<input type="submit" value="google 로그인" class="btn" style="background-color: #217Af0">
 					</p>
 					<hr>
 					
@@ -39,7 +39,7 @@
 						<input type="password" name="password" placeholder="비밀번호 입력" class="size" required>
 
 					<p>
-						<input type="submit" value="login" class="btn">
+						<input type="submit" value="로그인" class="btn">
 					</p>
 				</form>
 				<hr>

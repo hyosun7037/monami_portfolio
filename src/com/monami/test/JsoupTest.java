@@ -19,6 +19,7 @@ public class JsoupTest {
 		String imgUrl = null;
 		String name = null;
 		String price = null;
+		
 		try {
 			doc = Jsoup.connect(url).get();
 		} catch (Exception e) {

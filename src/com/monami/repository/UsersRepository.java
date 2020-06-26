@@ -24,20 +24,18 @@ public class UsersRepository {
 
 	// 회원가입
 	public int join(Users user) { // object 받기(안에 내용 다 받아야 하니까) // insert하고 싶으면 save
-		final String SQL = "INSERT INTO users(id, imgUrl, name, price, tag) "
-				+ "VALUES(ITEMS_SEQ.nextval,?,?,?,?)";
+		final String SQL = "INSERT INTO users(id, username, password, phonenumber, email, address, userRole, createDate) "
+				+ "VALUES(USERS_SEQ.nextval,?,?,?,?,?,?,sysdate)"; // userProfile은 나중에 update
 		try {
 			conn = DBConn.getConnection(); // DB에 연결
 			pstmt = conn.prepareStatement(SQL);
 			// 물음표 완성하기
-
 			pstmt.setString(1, user.getUsername());
 			pstmt.setString(2, user.getPassword());
 			pstmt.setInt(3, user.getPhonenumber());
 			pstmt.setString(4, user.getEmail());
 			pstmt.setString(5, user.getAddress());
 			pstmt.setString(6, user.getUserRole()); // user권한 (종류는 user, admin)
-
 			return pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
