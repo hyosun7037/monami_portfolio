@@ -24,8 +24,8 @@ public class UsersRepository {
 
 	// 회원가입
 	public int join(Users user) { // object 받기(안에 내용 다 받아야 하니까) // insert하고 싶으면 save
-		final String SQL = "INSERT INTO users(id, username, password, phonenumber, email, address, userRole, createDate) "
-				+ "VALUES(USERS_SEQ.nextval,?,?,?,?,?,?,sysdate)"; // userProfile은 나중에 update
+		final String SQL = "INSERT INTO users(id, imgUrl, name, price, tag) "
+				+ "VALUES(ITEMS_SEQ.nextval,?,?,?,?)";
 		try {
 			conn = DBConn.getConnection(); // DB에 연결
 			pstmt = conn.prepareStatement(SQL);

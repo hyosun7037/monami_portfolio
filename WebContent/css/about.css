@@ -118,6 +118,7 @@
   
   .about__con2__img a:nth-of-type(4){
     /* background:url('http://monamiconcept.com/wp-content/uploads/2017/12/mnm_96A5477_2.jpg') no-repeat center; */
+    
     background-color: gold;
     background-size: cover;
   }

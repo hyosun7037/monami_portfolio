@@ -14,7 +14,6 @@ public class UsersJoinAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dis = request.getRequestDispatcher("users/join.jsp");
 		dis.forward(request, response);
-
 	}
 
 }

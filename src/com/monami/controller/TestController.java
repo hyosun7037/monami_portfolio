@@ -17,12 +17,12 @@ import com.monami.action.board.ProductHomeAction;
 import com.monami.action.test.JsoupTestAction;
 
 // http://localhost:8000/blog/board
-@WebServlet("/board")
-public class BoardController extends HttpServlet {
+@WebServlet("/test")
+public class TestController extends HttpServlet {
 	private final static String TAG = "BoardController  : ";
 	private static final long serialVersionUID = 1L;
 
-	public BoardController() {
+	public TestController() {
 		super();
 	}
 
@@ -48,21 +48,9 @@ public class BoardController extends HttpServlet {
 	// Controller에서 파일이 생성되고, 라우터를 타면 return 값으로 객체를 생성시켜주고, action이라는 변수에 넣어주고
 	// execute로 실행
 	public Action router(String cmd) {
-		if (cmd.equals("home")) {
+		if (cmd.equals("test")) {
 			// 회원가입 페이지로 이동
-			return new BoardHomeAction();
-		}else if (cmd.equals("about")) {
-			// 회원가입 페이지로 이동
-			return new AboutHomeAction();
-		}else if (cmd.equals("product")) {
-			// 회원가입 페이지로 이동
-			return new ProductHomeAction();
-		}else if (cmd.equals("class")) {
-			// 회원가입 페이지로 이동
-			return new ClassHomeAction();
-		}else if (cmd.equals("map")) {
-			// 회원가입 페이지로 이동
-			return new MapHomeAction();
+			return new JsoupTestAction();
 		}
 		return null;
 	}
