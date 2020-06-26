@@ -24,7 +24,7 @@ public class JsoupTestAction implements Action {
 		ItemsRepository itemsRepository = ItemsRepository.getInstance();
 		
 		for (Items item : items) {
-			int result = itemsRepository.insertItem(item);
+			int result = itemsRepository.insertItem(item, value);
 			if(result != 1) {
 				Script.getMessage("정상적인 입력에 실패하였습니다.", response);
 				return;

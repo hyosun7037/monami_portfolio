@@ -15,4 +15,5 @@ public class Items {
 	private String name;
 	private String price;
 	private String tag;
+	private String value;
 }
